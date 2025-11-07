@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>MiniProject TodoList</title>
+</head>
+<body class="bg-black/50 flex justify-center items-center min-h-screen font-sans">
+
+  <div class="w-full max-w-md bg-white rounded-2xl shadow-2xl p-8">
+    <h1 class="text-3xl font-bold text-center mb-6 text-gray-800">📝 Todo List</h1>
+
+    <form id="form" class="flex gap-4 mb-6">
+      <input 
+        type="text" 
+        id="input"
+        placeholder="Enter a new task..."
+        class="flex-1 border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black"
+      />
+      <button 
+        id="btn" 
+        class="bg-black text-white font-semibold rounded-lg px-5 py-2 hover:bg-gray-800 transition"
+      >
+        Add
+      </button>
+    </form>
+
+    <ul id="list" class="p-2 space-y-2">
+   
+    </ul>
+  </div>
+
+  <script src="./dist/app.js"></script>
+</body>
+</html>
